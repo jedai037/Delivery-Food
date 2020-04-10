@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="src/css/normolize.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/animate.css">
     <link rel="shortcut icon" href="src/img/ico.svg" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <a class="logo footer-logo" href="index.html">
+            <a class="logo" href="index.html">
                 <img src="src/img/logo.svg" alt="Logo">
             </a>
             <input type="text" class="input input-adress" placeholder="Адрес доставки">
@@ -21,7 +22,7 @@
                     <img src="src/img/log-in.svg" alt="">
                     <span class="button-text">Войти</span>
                 </button>
-                <button class="button">
+                <button class="button" id="card-button">
                     <img src="src/img/buy.svg" alt="">
                     <span class="button-text">Корзина</span>
                 </button>
@@ -45,8 +46,8 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="card">
-                        <img src="src/img/card-1.jpg" alt="" class="card-image">
+                    <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                        <img src="src/img/restaurants/rolls.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
                                 <h3 class="card-title card-title__reg">Ролл угорь стандарт</h3>
@@ -65,14 +66,34 @@
                     </div>
                     <!-- /.card -->
     
-                    <div class="card">
-                        <img src="src/img/card-2.jpg" alt="" class="card-image">
+                    <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="src/img/restaurants/rolls-2.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
-                                <h3 class="card-title card-title__reg">Ролл угорь стандарт</h3>
+                                <h3 class="card-title card-title__reg">Калифорния лосось стандарт</h3>
                             </div>
                             <div class="card-info">
-                                <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
+                                <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="button button__active">
+                                    <span class="button-card-text">В корзину</span>
+                                    <img src="src/img/buy-white.svg" alt="" class="button-card-image">
+                                </button>
+                                <strong class="card-price__bold">395 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+    
+                    <div class="card wow fadeInUp" data-wow-delay="0.3s">
+                        <img src="src/img/restaurants/rolls-3.png" alt="" class="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title card-title__reg">Окинава стандарт</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="ingredients"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</div>
                             </div>
                             <div class="card-buttons">
                                 <button class="button button__active">
@@ -85,14 +106,14 @@
                     </div>
                     <!-- /.card -->
     
-                    <div class="card">
-                        <img src="src/img/card-3.jpg" alt="" class="card-image">
+                    <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="src/img/restaurants/rolls-4.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
-                                <h3 class="card-title card-title__reg">Ролл угорь стандарт</h3>
+                                <h3 class="card-title card-title__reg">Цезарь маки хl</h3>
                             </div>
                             <div class="card-info">
-                                <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
+                                <div class="ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</div>
                             </div>
                             <div class="card-buttons">
                                 <button class="button button__active">
@@ -105,14 +126,14 @@
                     </div>
                     <!-- /.card -->
     
-                    <div class="card">
-                        <img src="src/img/card-4.jpg" alt="" class="card-image">
+                    <div class="card wow fadeInUp" data-wow-delay="0.5s">
+                        <img src="src/img/restaurants/rolls-5.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
-                                <h3 class="card-title card-title__reg">Ролл угорь стандарт</h3>
+                                <h3 class="card-title card-title__reg">Ясай маки стандарт 185 г</h3>
                             </div>
                             <div class="card-info">
-                                <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
+                                <div class="ingredients">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</div>
                             </div>
                             <div class="card-buttons">
                                 <button class="button button__active">
@@ -125,34 +146,14 @@
                     </div>
                     <!-- /.card -->
     
-                    <div class="card">
-                        <img src="src/img/card-5.jpg" alt="" class="card-image">
+                    <a class="card wow fadeInUp" href="restaurant.html" data-wow-delay="0.6s">
+                        <img src="src/img/restaurants/rolls-6.png" alt="" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
-                                <h3 class="card-title card-title__reg">Ролл угорь стандарт</h3>
+                                <h3 class="card-title card-title__reg">Ролл с креветкой стандарт</h3>
                             </div>
                             <div class="card-info">
-                                <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
-                            </div>
-                            <div class="card-buttons">
-                                <button class="button button__active">
-                                    <span class="button-card-text">В корзину</span>
-                                    <img src="src/img/buy-white.svg" alt="" class="button-card-image">
-                                </button>
-                                <strong class="card-price__bold">250 ₽</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.card -->
-    
-                    <a class="card" href="restaurant.html">
-                        <img src="src/img/card-6.jpg" alt="" class="card-image">
-                        <div class="card-text">
-                            <div class="card-heading">
-                                <h3 class="card-title card-title__reg">Ролл угорь стандарт</h3>
-                            </div>
-                            <div class="card-info">
-                                <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
+                                <div class="ingredients">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</div>
                             </div>
                             <div class="card-buttons">
                                 <button class="button button__active">
@@ -191,5 +192,69 @@
         </div>
     </footer>
 
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="name">Ролл с угрем стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="food-counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="name">Ролл с угрем стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="food-counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="name">Ролл с угрем стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="food-counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="name">Ролл с угрем стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="food-counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="name">Ролл с угрем стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="food-counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="modalprice-tag">1 250 ₽</span>
+                <div class="footer-buttons">
+                    <button class="button button__active">Оформить заказ</button>
+                    <button class="button">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/wow.min.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
