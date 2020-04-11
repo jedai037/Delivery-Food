@@ -615,6 +615,16 @@ a {
         -ms-flex-order: 2;
             order: 2;
   }
+  .food-price {
+    font-size: 14px;
+    margin-right: 0;
+    white-space: nowrap;
+  }
+  .modalprice-tag {
+    font-size: 12px;
+    padding: 10px 15px;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 480px) {
